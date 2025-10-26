@@ -1,0 +1,36 @@
+#project put(13,15,18).
+#project put(11,20,21).
+#project put(12,20,21).
+#project put(7,13,14).
+#project put(21,3,20).
+#project put(23,19,20).
+#project put(20,3,21).
+#project put(24,20,21).
+#project put(6,13,14).
+#project put(25,20,21).
+#project put(25,3,10).
+#project put(20,4,21).
+#project put(20,17,18).
+#project put(19,4,21).
+#project put(19,17,18).
+#project put(12,14,15).
+#project put(12,15,18).
+#project put(11,19,20).
+#project put(14,10,17).
+#project put(20,3,10).
+#project put(21,9,21).
+#project put(22,10,20).
+#project put(23,18,19).
+#project put(24,19,20).
+#project put(25,4,9).
+#project put(25,20,21).
+#project put(8,15,20).
+#project put(7,14,15).
+#project put(6,13,14).
+#project put(13,20,21).
+#project put(15,17,18).
+#project put(16,15,16).
+#project put(17,3,18).
+#show put/3.
+
+

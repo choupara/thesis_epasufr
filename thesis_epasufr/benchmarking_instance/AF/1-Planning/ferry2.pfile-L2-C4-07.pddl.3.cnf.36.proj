@@ -1,0 +1,18 @@
+%create 6 answers
+#project in(a703).
+#project in(a702).
+#project in(a45).
+#project in(a50).
+#project in(a156).
+#project in(a428).
+
+%create 12 answers
+#project in(a383).
+
+%create 24 answers
+#project in(a12).
+
+%create 36 answers
+#project in(a145).
+
+#show in/1.

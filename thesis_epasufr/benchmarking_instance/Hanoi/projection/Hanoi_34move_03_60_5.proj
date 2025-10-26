@@ -1,0 +1,8 @@
+#project put(0,4,19).
+#project put(1,21,22).
+#project put(1,4,19).
+#project put(10,16,17).
+#project put(12,18,22).
+
+#show put/3.
+
