@@ -1,14 +1,14 @@
 # Quickstart
 
 **epas** provides two main features:
+
 1. **Facet Count Computation**  
-   epas can compute the *facet count* of answer sets that are **projected away** when using the `--project` flag in Clingo. This is already present in the implementation python. The user needs to use `#project` to indicate the set of projected atoms according to the encoding.
+   epas can compute the *facet count* of answer sets that are **projected away** when using the `--project` flag in Clingo. This is already present in the Python implementation. Users need to use `#project` to indicate the set of projected atoms according to the encoding.
 
 2. **Navigation mode for exploring individual answer sets**  
-   User can inspect and navigate the projected answer sets interactively.
+   Users can inspect and navigate the projected answer sets interactively.
 
-
-## epas: find out facet count of projected away answer sets.
+## epas: Find Out Facet Count of Projected Away Answer Sets
 ```
 $ python epas.py example.lp
 Choose the type of limit you want to set:
@@ -19,7 +19,8 @@ Enter your choice (1, 2, or 3): 3
 Main started: 2025-11-28 14:17:45.843718
 Do you want to enable navigation mode? (y/n): n
 ```
-## epas: Naviagting one answer set
+
+## epas: Navigating One Answer Set
 ```
 $ python epas.py example.lp
 Choose the type of limit you want to set:
@@ -30,36 +31,24 @@ Enter your choice (1, 2, or 3): 3
 Main started: 2025-11-28 14:17:45.843718
 Do you want to enable navigation mode? (y/n): y
 ✅Answer Set 1: [order_dish(salad), order_drink(juice), total_cost(12), cost_category(moderate)]
-
 Answer Set with ONLY projected atom: [ cost_category(moderate) ]
 Facet Count:  8
-
 ✅Answer Set 2: [order_dish(salad), order_drink(water), total_cost(9), cost_category(budget)]
-
 Answer Set with ONLY projected atom: [ cost_category(budget) ]
 Facet Count:  4
-
 ✅Answer Set 3: [order_dish(pizza), order_drink(water), total_cost(16), cost_category(premium)]
-
 Answer Set with ONLY projected atom: [ cost_category(premium) ]
 Facet Count:  8
 Warning: No start time recorded for key 'Clingo time(Projection + Facet Count algorithm)'
-
 Total answer sets found: 3
-
  Navigation Mode Activated
-
 Available Answer Set Options:
-
 1: [order_dish(salad), order_drink(juice), total_cost(12), cost_category(moderate)]
 2: [order_dish(salad), order_drink(water), total_cost(9), cost_category(budget)]
 3: [order_dish(pizza), order_drink(water), total_cost(16), cost_category(premium)]
-
 Select Answer Set Index for Navigation [1, ..., 3]: 1     -- user input answer set
 Bag of loop navigation atom []
-
 Navigation round: 1
-
  1: Deactivate previous facet
  2: Deactivate all facets
  3: Activate new facet
@@ -69,13 +58,14 @@ Navigation round: 1
 ```
 
 # Installation
-## New directory lib
+
+## New Directory lib
 ```
 mkdir /mnt/project/lib
 python3 -m venv myenv
 ```
 
-## Install clingo version
+## Install Clingo Version
 ```
 python3 -m venv clingoenv
 source clingoenv/bin/activate
@@ -98,9 +88,9 @@ cd fasb_interp
 cargo build -r --features interpreter
 ```
 
+## Ignore IDE/Editor Files
 
-## Ignore IDE/editor files
-List down the files that needs to be ignored based on platform
+List the files that need to be ignored based on platform:
 ```
 .vscode/
 .idea/
@@ -110,7 +100,8 @@ List down the files that needs to be ignored based on platform
 ```
 
 ## Download epas
-epas is very to use. It only needs to be cloned at put in the intended directory.
+
+epas is very easy to use. It only needs to be cloned and put in the intended directory.
 ```
 git clone https://github.com/choupara/thesis_epasufr.git
 cd thesis_epasufr/src
