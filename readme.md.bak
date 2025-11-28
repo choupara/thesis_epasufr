@@ -1,14 +1,60 @@
+#Installation
+##New directory lib
+mkdir /mnt/project/lib
+python3 -m venv myenv
+
+##Install clingo version 
+python3 -m venv clingoenv
+source clingoenv/bin/activate
+pip install clinguin
+
+##Install command line version of clingo
+sudo apt install gringo
+
+##Install fasb
+sudo apt install curl build-essential
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+source $HOME/.cargo/env
+
+sudo apt install cmake
+
+git clone https://github.com/drwadu/fasb.git
+mv fasb fasb_normal
+git clone https://github.com/drwadu/fasb.git
+mv fasb fasb_interp
+cd fasb_normal 
+cargo build -r
+cd ..
+cd fasb_interp
+cargo build -r --features interpreter
+
+
+##Export path for normal
+export PATH="/mnt/project/lib/fasb_normal/target/release:$PATH"
+
+##Export path for fasb_interp
+export PATH="/mnt/project/lib/fasb_interp/target/release:$PATH"
+
+cd /mnt/project
+git init
+nano .gitignore
+##following content in gitignore
+## Ignore lib folder
+lib/
+## Ignore IDE/editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+##Download epas
+git clone https://github.com/choupara/thesis_epasufr.git
+cd thesis_epasufr/src
+
+
 # Quickstart
 
-**epas** provides two main features:
-1. **Facet Count Computation**  
-   epas can compute the *facet count* of answer sets that are **projected away** when using the `--project` flag in Clingo. This is already present in the implementation python. The user needs to use `#project` to indicate the set of projected atoms according to the encoding.
-
-2. **Navigation mode for exploring individual answer sets**  
-   User can inspect and navigate the projected answer sets interactively.
-
-
-## epas: find out facet count of projected away answer sets.
+##epas: find out facet count of projected away answer sets.
 ```
 $ python epas.py example.lp
 Choose the type of limit you want to set:
@@ -19,7 +65,7 @@ Enter your choice (1, 2, or 3): 3
 Main started: 2025-11-28 14:17:45.843718
 Do you want to enable navigation mode? (y/n): n
 ```
-## epas: Naviagting one answer set
+##epas: Naviagting one answer set
 ```
 $ python epas.py example.lp
 Choose the type of limit you want to set:
@@ -66,52 +112,4 @@ Navigation round: 1
  4: Diversity measure under each facet
  5: Quit navigation
  Enter command (1/2/3/4/5):                         -- user input navigation action
-```
-
-# Installation
-## New directory lib
-```
-mkdir /mnt/project/lib
-python3 -m venv myenv
-```
-
-## Install clingo version
-```
-python3 -m venv clingoenv
-source clingoenv/bin/activate
-pip install clinguin
-```
-
-## Install fasb
-```
-sudo apt install curl build-essential
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-source $HOME/.cargo/env
-git clone https://github.com/drwadu/fasb.git
-mv fasb fasb_normal
-git clone https://github.com/drwadu/fasb.git
-mv fasb fasb_interp
-cd fasb_normal 
-cargo build -r
-cd ..
-cd fasb_interp
-cargo build -r --features interpreter
-```
-
-
-## Ignore IDE/editor files
-List down the files that needs to be ignored based on platform
-```
-.vscode/
-.idea/
-*.swp
-*.swo
-*.bak
-```
-
-## Download epas
-epas is very to use. It only needs to be cloned at put in the intended directory.
-```
-git clone https://github.com/choupara/thesis_epasufr.git
-cd thesis_epasufr/src
 ```
