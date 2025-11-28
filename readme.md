@@ -59,12 +59,6 @@ Navigation round: 1
 
 # Installation
 
-## New Directory lib
-```
-mkdir /mnt/project/lib
-python3 -m venv myenv
-```
-
 ## Install Clingo Version
 ```
 python3 -m venv clingoenv
@@ -86,17 +80,6 @@ cargo build -r
 cd ..
 cd fasb_interp
 cargo build -r --features interpreter
-```
-
-## Ignore IDE/Editor Files
-
-List the files that need to be ignored based on platform:
-```
-.vscode/
-.idea/
-*.swp
-*.swo
-*.bak
 ```
 
 ## Download epas

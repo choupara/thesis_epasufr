@@ -10,7 +10,7 @@
 
 ## epas: Find Out Facet Count of Projected Away Answer Sets
 ```
-$ python epas.py example.lp
+$ python epas.py order_menu.lp
 Choose the type of limit you want to set:
 1. Limit by number of answer sets
 2. Limit by time (seconds)
@@ -22,7 +22,7 @@ Do you want to enable navigation mode? (y/n): n
 
 ## epas: Navigating One Answer Set
 ```
-$ python epas.py example.lp
+$ python epas.py order_menu.lp
 Choose the type of limit you want to set:
 1. Limit by number of answer sets
 2. Limit by time (seconds)
@@ -59,12 +59,6 @@ Navigation round: 1
 
 # Installation
 
-## New Directory lib
-```
-mkdir /mnt/project/lib
-python3 -m venv myenv
-```
-
 ## Install Clingo Version
 ```
 python3 -m venv clingoenv
@@ -86,17 +80,6 @@ cargo build -r
 cd ..
 cd fasb_interp
 cargo build -r --features interpreter
-```
-
-## Ignore IDE/Editor Files
-
-List the files that need to be ignored based on platform:
-```
-.vscode/
-.idea/
-*.swp
-*.swo
-*.bak
 ```
 
 ## Download epas
