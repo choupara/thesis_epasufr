@@ -1,12 +1,16 @@
-%create 6 answers
-#project in(a703).
-#project in(a702).
-#project in(a45).
-#project in(a50).
-#project in(a156).
-#project in(a428).
+#project in(a500).
+#project in(a742).
+#project in(a743).
+#project in(a623).
+#project in(a624).
+#project in(a745).
+#project in(a740).
+#project in(a620).
+#project in(a739).
+#project in(a619).
+#project in(a735).
+#project in(a615).
+#project in(a616).
 
-%create 12 answers
-#project in(a383).
 
 #show in/1.

@@ -1,19 +1,54 @@
-%creates 16 answers
-#project in(a126).
-#project in(a147).
-#project in(a182).
-#project in(a0).
+#project  in(a166).
+#project  in(a361).
+#project  in(a242).
+#project  in(a126).
+#project  in(a127).
+#project  in(a369).
+#project  in(a128).
+#project  in(a244).
+#project  in(a365).
+#project  in(a367).
+#project  in(a230).
+#project  in(a119).
+#project  in(a116).
+#project  in(a237).
+#project  in(a238).
+#project  in(a118).
+#project  in(a239).
+#project  in(a353).
+#project  in(a235).
+#project  in(a140).
+#project  in(a262).
+#project  in(a264).
+#project  in(a14).
+#project  in(a17).
+#project  in(a16).
+#project  in(a148).
+#project  in(a269).
+#project  in(a149).
+#project  in(a145).
+#project  in(a268).
+#project  in(a22).
+#project  in(a250).
+#project  in(a371).
+#project  in(a21).
+#project  in(a130).
+#project  in(a26).
+#project  in(a27).
+#project  in(a370).
+#project  in(a137).
+#project  in(a138).
+#project  in(a139).
+#project  in(a133).
+#project  in(a134).
+#project  in(a135).
+#project  in(a256).
+#project  in(a32).
+#project  in(a284).
+#project  in(a164).
+#project  in(a285).
+#project  in(a34).
+#project  in(a165).
 
-%creates 32 answers
-#project in(a221).
-
-%creates 48 answers
-#project in(a82).
-
-%creates 56 answers
-#project in(a127).
-
-%creates 72 answers
-#project in(a150).
 
 #show in/1.

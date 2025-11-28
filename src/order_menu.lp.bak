@@ -1,0 +1,59 @@
+% ===== INSTANCE FILE (restaurant_instance.lp) =====
+% Available menu items
+dish(pizza).
+dish(burger).
+dish(salad).
+
+% Available drinks  
+drink(coke).
+drink(water).
+drink(juice).
+
+% Dish prices
+dish_price(pizza, 15).
+dish_price(burger, 12).
+dish_price(salad, 8).
+
+% Drink prices
+drink_price(coke, 3).
+drink_price(water, 1).
+drink_price(juice, 4).
+
+
+% ===== ENCODING FILE (restaurant_encoding.lp) =====
+% Each customer must order exactly one dish
+1 { order_dish(D) : dish(D) } 1.
+
+% Each customer must order exactly one drink
+1 { order_drink(Dr) : drink(Dr) } 1.
+
+% Calculate dish cost based on what was ordered
+dish_cost(Price) :- order_dish(D), dish_price(D, Price).
+
+% Calculate drink cost based on what was ordered
+drink_cost(Price) :- order_drink(Dr), drink_price(Dr, Price).
+
+% Total cost calculation
+total_cost(Total) :- dish_cost(DC), drink_cost(DrC), Total = DC + DrC.
+
+% Cost categories for business analysis
+cost_category(budget) :- total_cost(Total), Total <= 11.
+cost_category(moderate) :- total_cost(Total), Total > 11, Total <= 15.
+cost_category(premium) :- total_cost(Total), Total > 15.
+
+% Customer satisfaction based on order combination
+%satisfied :- order_dish(pizza), order_drink(coke).
+%satisfied :- order_dish(salad), order_drink(water).
+
+% Project only the cost category - this hides all order details!
+%#project cost_category(premium).
+#project cost_category(moderate).
+#project cost_category(budget).
+%#project cost_category/1.
+
+#show cost_category/1.
+
+%#show total_cost/1.
+#show order_dish/1.
+#show order_drink/1.
+

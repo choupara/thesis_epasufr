@@ -16,3 +16,4 @@ defeated(X) :- in(Y), att(Y,X).
 %% S defeats all arguments which do not belong to S
 :- out(X), not defeated(X).
 
+#show in/1.

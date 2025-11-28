@@ -1,23 +1,110 @@
-%creates 16 answers
-#project in(a126).
-#project in(a147).
-#project in(a182).
-#project in(a0).
-
-%creates 32 answers
-#project in(a221).
-
-%creates 48 answers
-#project in(a82).
-
-%creates 56 answers
-#project in(a127).
-
-%creates 72 answers
-#project in(a150).
-
-%creates 90 answers
-#project in(a294).
+#project   in(a166).
+#project   in(a361).
+#project   in(a242).
+#project   in(a244).
+#project   in(a365).
+#project   in(a140).
+#project   in(a262).
+#project   in(a264).
+#project   in(a14).
+#project   in(a17).
+#project   in(a16).
+#project   in(a22).
+#project   in(a250).
+#project   in(a371).
+#project   in(a134).
+#project   in(a135).
+#project   in(a256).
+#project   in(a32).
+#project   in(a284).
+#project   in(a164).
+#project   in(a285).
+#project   in(a34).
+#project   in(a158).
+#project   in(a279).
+#project   in(a184).
+#project   in(a306).
+#project   in(a308).
+#project   in(a309).
+#project   in(a302).
+#project   in(a303).
+#project   in(a189).
+#project   in(a63).
+#project   in(a66).
+#project   in(a65).
+#project   in(a300).
+#project   in(a301).
+#project   in(a223).
+#project   in(a330).
+#project   in(a0).
+#project   in(a2).
+#project   in(a4).
+#project   in(a6).
+#project   in(a7).
+#project   in(a337).
+#project   in(a217).
+#project   in(a338).
+#project   in(a328).
+#project   in(a203).
+#project   in(a324).
+#project   in(a204).
+#project   in(a325).
+#project   in(a170).
+#project   in(a84).
+#project   in(a191).
+#project   in(a318).
+#project   in(a339).
+#project   in(a123).
+#project   in(a205).
+#project   in(a327).
+#project   in(a68).
+#project   in(a176).
+#project   in(a290).
+#project   in(a291).
+#project   in(a171).
+#project   in(a292).
+#project   in(a172).
+#project   in(a70).
+#project   in(a298).
+#project   in(a178).
+#project   in(a54).
+#project   in(a57).
+#project   in(a186).
+#project   in(a59).
+#project   in(a182).
+#project   in(a165).
+#project   in(a38).
+#project   in(a167).
+#project   in(a41).
+#project   in(a169).
+#project   in(a43).
+#project   in(a152).
+#project   in(a274).
+#project   in(a45).
+#project   in(a275).
+#project   in(a48).
+#project   in(a270).
+#project   in(a21).
+#project   in(a130).
+#project   in(a26).
+#project   in(a27).
+#project   in(a370).
+#project   in(a137).
+#project   in(a138).
+#project   in(a139).
+#project   in(a148).
+#project   in(a269).
+#project   in(a149).
+#project   in(a145).
+#project   in(a268).
+#project   in(a367).
+#project   in(a230).
+#project   in(a119).
+#project   in(a116).
+#project   in(a126).
+#project   in(a127).
+#project   in(a369).
+#project   in(a128).
 
 
 #show in/1.
