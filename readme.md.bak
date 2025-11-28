@@ -3,7 +3,7 @@
 **epas** provides two main features:
 
 1. **Facet Count Computation**  
-   epas can compute the *facet count* of answer sets that are **projected away**. Users need to use `#project` to indicate the set of projection atoms according to the encoding.
+   epas can compute the *facet count* of answer sets that are **projected away** when using the `--project` flag in Clingo. This is already present in the Python implementation. Users need to use `#project` to indicate the set of projected atoms according to the encoding.
 
 2. **Navigation mode for exploring individual answer sets**  
    Users can inspect and navigate the projected answer sets interactively.
