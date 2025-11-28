@@ -10,7 +10,7 @@
 
 ## epas: Find Out Facet Count of Projected Away Answer Sets
 ```
-$ python epas.py example.lp
+$ python epas.py order_menu.lp
 Choose the type of limit you want to set:
 1. Limit by number of answer sets
 2. Limit by time (seconds)
@@ -22,7 +22,7 @@ Do you want to enable navigation mode? (y/n): n
 
 ## epas: Navigating One Answer Set
 ```
-$ python epas.py example.lp
+$ python epas.py order_menu.lp
 Choose the type of limit you want to set:
 1. Limit by number of answer sets
 2. Limit by time (seconds)
